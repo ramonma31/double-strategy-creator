@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Double Strategy Creator - Apostador Automático do Double Blaze</title>
+  <meta name="description" content="Plataforma Profissional de Estratégias No-Code, Apostador Automático, Gestão de Gales por Etapa e Recuperação por Ciclos para o Double Blaze. Exclusivo para Windows.">
+  <link rel="icon" type="image/x-icon" href="assets/Game_analyzer_app_icon_logo_.ico">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#" class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-bolt" style="color: var(--accent-cyan); font-size: 1.25rem;"></i>
+        </div>
+        <div class="brand-text">
+          <h1>Double Strategy Creator</h1>
+          <span>Apostador Automático Double Blaze</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#planos">Planos & Preços</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#download" class="btn btn-outline"><i class="fa-brands fa-windows"></i> Baixar App</a>
+        <a href="#planos" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i> Comprar Licença</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="badge">
+        <span class="badge-pulse"></span>
+        <span>Versão 2.0 Nativa Windows 10/11 | Automação Selenium de Alta Velocidade</span>
+      </div>
+
+      <h2 class="hero-title">
+        Crie Estratégias Vencedoras & Aposte no Automático no <span class="gradient">Double Blaze</span>
+      </h2>
+
+      <p class="hero-subtitle">
+        A ferramenta definitiva para análise estatística dos 15 números, Construtor de Estratégias No-Code por blocos, Gales com valores personalizados por etapa e Sistema de Recuperação por Ciclos.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#planos" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-lock"></i> Adquirir Acesso Imediato
+        </a>
+        <a href="#download" class="btn btn-outline btn-lg">
+          <i class="fa-brands fa-windows"></i> Baixar Executável (.exe)
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <h3>94.2%</h3>
+          <p>Assertividade Máxima em Backtests</p>
+        </div>
+        <div class="hero-stat-item">
+          <h3>100% No-Code</h3>
+          <p>Monte regras lógicas sem código</p>
+        </div>
+        <div class="hero-stat-item">
+          <h3>0.2s</h3>
+          <p>Tempo de Execução de Ordem</p>
+        </div>
+        <div class="hero-stat-item">
+          <h3>InfinitePay</h3>
+          <p>Pagamento Seguro & Ativação Imediata</p>
+        </div>
+      </div>
+
+      <!-- App Interface Live Showcase Mockup -->
+      <div class="mockup-container">
+        <div class="mockup-header">
+          <div class="mockup-dots">
+            <span class="mockup-dot dot-red"></span>
+            <span class="mockup-dot dot-yellow"></span>
+            <span class="mockup-dot dot-green"></span>
+          </div>
+          <div class="mockup-title">Double Strategy Creator v2.0 - [Painel de Controle Ativo]</div>
+          <div style="color: var(--accent-emerald); font-size: 0.85rem; font-weight: 700;">
+            <i class="fa-solid fa-circle" style="font-size: 0.6rem;"></i> CONECTADO
+          </div>
+        </div>
+
+        <div class="mockup-grid">
+          <div class="mockup-card">
+            <p>Taxa de Assertividade</p>
+            <h4 style="color: var(--accent-emerald);">88.7%</h4>
+          </div>
+          <div class="mockup-card">
+            <p>Lucro Total Estimado</p>
+            <h4 style="color: var(--accent-cyan);">R$ 1.458,50</h4>
+          </div>
+          <div class="mockup-card">
+            <p>Ciclo Atual</p>
+            <h4 style="color: #38bdf8;">Ciclo 0 (Base)</h4>
+          </div>
+          <div class="mockup-card">
+            <p>Placar Hoje</p>
+            <h4>🟢 42 WIN | 🔴 3 LOSS</h4>
+          </div>
+        </div>
+
+        <div style="text-align: left; margin-bottom: 8px; font-size: 0.85rem; color: var(--text-secondary);">
+          <i class="fa-solid fa-satellite-dish"></i> Leitura dos Giros em Tempo Real:
+        </div>
+        <div class="mockup-live-roulette" id="liveRoulette">
+          <!-- Gerado dinamicamente pelo JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RECURSOS ================= -->
+  <section class="section" id="recursos">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Tecnologia Exclusiva</div>
+        <h2 class="section-title">Tudo o que você precisa para lucrar com consistência</h2>
+        <p class="section-desc">
+          Chega de operar no achismo. Tenha inteligência de dados, estatística avançada e automação trabalhando 24 horas por você.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+          <h3>Strategy Builder No-Code</h3>
+          <p>Monte regras com blocos condicionais visuais (SE Streak >= 4 AND Frequência < 30% ENTÃO Apostar Vermelho). Crie, edite, duplique e teste estratégias sem programar.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Gales Personalizados (G0 a G4)</h3>
+          <p>Defina o valor exato da cor e da proteção no branco para cada tentativa (1ª Entrada, G1, G2, G3). Com trava automática que impede novos sinais durante o gale.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <h3>Recuperação por Ciclos</h3>
+          <p>Se tomar Red, o bot entra no Ciclo 1 multiplicando a aposta do próximo sinal para cobrir a perda e garantir lucro. Ao bater Win, reseta para o Ciclo 0.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Gestão de Risco & Stop Gain/Loss</h3>
+          <p>Defina sua meta diária de lucro (Stop Gain) e limite de perda (Stop Loss). O robô trava automaticamente quando a meta for batida ou por sequência de Reds.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Automação Web Instantânea</h3>
+          <p>Conexão nativa via Chrome Selenium que mantém sua sessão salva e envia ordens com cliques em milissegundos assim que o gatilho estatístico é ativado.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Backtest Anti-Overfitting</h3>
+          <p>Simule suas estratégias em até 5.000 giros passados do banco com divisão Treino/Teste de 70/30 para validar se a estratégia realmente funciona no longo prazo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMO FUNCIONA ================= -->
+  <section class="section" id="como-funciona" style="background: rgba(15, 23, 42, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Passo a Passo Simples</div>
+        <h2 class="section-title">Como começar a usar em 3 minutos</h2>
+        <p class="section-desc">Instalação descomplicada, pronta para operar no seu computador Windows.</p>
+      </div>
+
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Escolha seu Plano</h3>
+          <p>Adquira sua assinatura Mensal ou Anual com pagamento 100% seguro via InfinitePay (Pix imediato ou Cartão de Crédito).</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Baixe o Aplicativo Windows</h3>
+          <p>Faça o download do executável oficial (.exe) para Windows 10 ou 11 e acesse com seu e-mail e senha cadastrados.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Configure e Ligue o Bot</h3>
+          <p>Escolha uma das 4 estratégias pré-configuradas ou monte sua própria regra no Strategy Builder e ative a automação!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PLANOS & PREÇOS ================= -->
+  <section class="section" id="planos">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Acesso & Assinatura</div>
+        <h2 class="section-title">Escolha o plano ideal para suas operações</h2>
+        <p class="section-desc">Acesso total a todas as funcionalidades do software com suporte e atualizações inclusas.</p>
+      </div>
+
+      <!-- Switch Mensal / Anual -->
+      <div class="pricing-switcher">
+        <span class="switch-label active" id="labelMonthly">Mensal</span>
+        <div class="switch-btn" id="billingSwitch"></div>
+        <span class="switch-label" id="labelAnnual">Anual <strong style="color: var(--accent-emerald); font-size: 0.8rem;">(Economize R$ 467)</strong></span>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plano Mensal -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Plano Mensal</h3>
+            <p>Flexibilidade mês a mês para validar seus lucros.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">R$</span>
+            <span class="price-val" id="priceMonthly">97</span>
+            <span class="price-period" id="periodMonthly">/mês</span>
+          </div>
+
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> <strong>Acesso Completo ao App Windows</strong></li>
+            <li><i class="fa-solid fa-check"></i> Construtor de Estratégias No-Code Ilimitado</li>
+            <li><i class="fa-solid fa-check"></i> Sistema de Gales por Etapas (G0 a G4)</li>
+            <li><i class="fa-solid fa-check"></i> Sistema de Ciclos de Recuperação</li>
+            <li><i class="fa-solid fa-check"></i> Automação de Apostas no Chrome</li>
+            <li><i class="fa-solid fa-check"></i> Simulador de Backtest Histórico</li>
+            <li><i class="fa-solid fa-check"></i> Suporte Padrão via WhatsApp</li>
+          </ul>
+
+          <a href="#" class="btn btn-outline btn-checkout" data-plan="mensal">
+            <i class="fa-solid fa-credit-card"></i> Assinar Plano Mensal
+          </a>
+        </div>
+
+        <!-- Plano Anual (Popular) -->
+        <div class="pricing-card popular">
+          <div class="popular-badge">MAIS POPULAR & ECONÔMICO</div>
+          <div class="pricing-header">
+            <h3>Plano Anual VIP</h3>
+            <p>12 meses de acesso com 2 meses grátis e suporte prioritário.</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">R$</span>
+            <span class="price-val" id="priceAnnual">697</span>
+            <span class="price-period" id="periodAnnual">/ano</span>
+          </div>
+
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> <strong>Tudo do Plano Mensal</strong></li>
+            <li><i class="fa-solid fa-check"></i> <strong>Economia imediata de mais de 40%</strong></li>
+            <li><i class="fa-solid fa-check"></i> 4 Estratégias VIP Prontas de Alta Assertividade</li>
+            <li><i class="fa-solid fa-check"></i> Acesso Antecipado a Novas Atualizações</li>
+            <li><i class="fa-solid fa-check"></i> Suporte VIP Prioritário Direto com Especialistas</li>
+            <li><i class="fa-solid fa-check"></i> Aulas e Tutoriais de Gestão de Banca</li>
+          </ul>
+
+          <a href="#" class="btn btn-primary btn-checkout" data-plan="anual">
+            <i class="fa-solid fa-bolt"></i> Garantir Acesso Anual VIP
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DOWNLOAD BOX ================= -->
+  <section class="section" id="download">
+    <div class="container">
+      <div class="download-box">
+        <div class="download-icon">
+          <i class="fa-brands fa-windows" style="color: var(--accent-cyan);"></i>
+        </div>
+        <h2 style="font-size: 2.2rem; font-weight: 800; margin-bottom: 12px;">Baixe o Double Strategy Creator</h2>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+          Executável independente compilado para Windows 10 e Windows 11 (64-bit). Não requer instalação de Python ou dependências manuais.
+        </p>
+
+        <div class="download-specs">
+          <div><i class="fa-solid fa-desktop"></i> Windows 10 / 11 (64-bit)</div>
+          <div><i class="fa-solid fa-file-zipper"></i> Tamanho: ~55 MB</div>
+          <div><i class="fa-solid fa-shield-virus"></i> 100% Seguro & Verificado</div>
+        </div>
+
+        <a href="#" class="btn btn-cyan btn-lg" id="btnDownloadApp">
+          <i class="fa-solid fa-download"></i> Baixar Versão para Windows (.exe)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">Dúvidas Frequentes</div>
+        <h2 class="section-title">Perguntas e Respostas</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Como funciona a compra pela InfinitePay?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Ao clicar em Comprar Licença, você será direcionado para o checkout oficial e seguro da InfinitePay. Você pode pagar via Pix com aprovação imediata ou Cartão de Crédito em até 12x. Logo após a confirmação, seu acesso ao software é liberado.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Preciso saber programar para criar estratégias?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Não! O Double Strategy Creator possui um motor visual No-Code. Você seleciona os blocos de condições lógicas (Streaks, Frequência %, Pós-Branco, Alternância, Operadores =, >, <, entre) e o robô traduz tudo em tempo real automaticamente.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Como funciona a proteção no branco e os gales?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Você pode ativar a cobertura no Branco (14x) em qualquer aposta. Além disso, o sistema de gales permite configurar valores diferentes para cada tentativa (1ª entrada, G1, G2...), com trava de novos sinais durante a operação para máxima segurança.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Funciona em Mac, Linux ou Celular?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            Atualmente o aplicativo é executável exclusivo e otimizado para sistemas operacionais Windows 10 e Windows 11 (64-bit).
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MODAL CHECKOUT INFINITEPAY ================= -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div style="font-size: 2.5rem; color: var(--accent-emerald); margin-bottom: 10px;">
+          <i class="fa-solid fa-shield-check"></i>
+        </div>
+        <h3 id="modalPlanTitle" style="font-size: 1.4rem; font-weight: 800;">Finalizar Compra</h3>
+        <p id="modalPlanPrice" style="color: var(--accent-cyan); font-size: 1.25rem; font-weight: 700; margin-top: 4px;"></p>
+      </div>
+
+      <div style="background: rgba(30, 41, 59, 0.6); padding: 16px; border-radius: var(--radius-md); margin-bottom: 24px; font-size: 0.9rem; color: var(--text-secondary);">
+        <p><i class="fa-solid fa-lock" style="color: var(--accent-emerald);"></i> Pagamento 100% criptografado e seguro processado pela <strong>InfinitePay</strong>.</p>
+        <p style="margin-top: 8px;"><i class="fa-solid fa-bolt" style="color: var(--accent-cyan);"></i> Aceita <strong>Pix Instantâneo</strong> e <strong>Cartão de Crédito em até 12x</strong>.</p>
+      </div>
+
+      <a href="#" target="_blank" class="btn btn-primary" id="btnInfinitePay" style="width: 100%; font-size: 1.05rem; padding: 14px;">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Pagar com InfinitePay (Pix / Cartão)
+      </a>
+
+      <p style="text-align: center; font-size: 0.75rem; color: var(--text-muted); margin-top: 16px;">
+        Após o pagamento, seu e-mail cadastrado terá o login ativo automaticamente no aplicativo.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+        <div class="brand">
+          <div class="brand-icon">
+            <i class="fa-solid fa-bolt" style="color: var(--accent-cyan);"></i>
+          </div>
+          <div class="brand-text">
+            <h1>Double Strategy Creator</h1>
+            <span>Apostador Automático Double Blaze</span>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 24px; font-size: 0.9rem;">
+          <a href="#recursos" style="color: var(--text-secondary); text-decoration: none;">Recursos</a>
+          <a href="#planos" style="color: var(--text-secondary); text-decoration: none;">Planos</a>
+          <a href="#download" style="color: var(--text-secondary); text-decoration: none;">Download</a>
+          <a href="#faq" style="color: var(--text-secondary); text-decoration: none;">FAQ</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Double Strategy Creator. Todos os direitos reservados. Software desenvolvido para fins de análise e automação estatística.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
